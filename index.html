@@ -7,17 +7,15 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sunghyunzz/eulyoo1945/eulyoo1945.css">
 <style>
   :root{
-  --paper:#fcfbf7;   /* 배경 (단색) */
-  --paper2:#fcfbf7;  /* 이제 안 쓰지만 같은 색으로 통일 */
-  --card:#fffdf8;    /* 카드·버튼 안쪽 면 (거의 흰 크림) */
-  --ink:#5c4f37;     /* 메인 글자 (청첩장 글자색 톤의 브라운) */
-  --ink-soft:#8c7c5d;/* 흐린 글자 (인사말·설명) */
-  --line:#f4e2a5;    /* 테두리·선 (은은한 금색) */
-  --blush:#e0bfa2;   /* 강아지 볼터치 */
-}
+    --paper:#fcfbf7;    /* 배경 */
+    --card:#fffdf8;     /* 버튼 안쪽 면 */
+    --ink:#5c4f37;      /* 메인 글자 */
+    --ink-soft:#8c7c5d; /* 흐린 글자 (인사말·설명) */
+    --line:#f4e2a5;     /* 테두리·선 (노란 금색) */
+  }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
-  b{font-weight:600;}            /* 을유1945는 600(SemiBold)이 볼드예요 */
+  b{font-weight:600;}            /* 을유1945는 600(SemiBold)이 볼드 */
   body{
     background:var(--paper);
     color:var(--ink);
@@ -41,16 +39,7 @@
     border:1.6px solid var(--line); opacity:.62;
   }
 
-  .card{
-    position:relative; padding:30px 26px 30px;
-    text-align:center;
-  }
-
-  .eyebrow{
-    font-family:"Eulyoo1945",serif; font-size:18px; letter-spacing:.10em;
-    color:var(--ink-soft); margin:4px 0 2px;
-  }
-  .eyebrow .dot{display:inline-block; margin:0 9px; opacity:.55;}
+  .card{ position:relative; padding:30px 26px; text-align:center; }
 
   .dog{
     width:74%; max-width:280px; height:auto; display:block; margin:6px auto 2px;
@@ -60,27 +49,19 @@
   @keyframes bob{50%{transform:translateY(-7px) rotate(-1deg);}}
 
   .name{
-    font-family:"Eulyoo1945",serif; font-weight:600;
-    font-size:28px; letter-spacing:.04em; margin:2px 0 -2px;
+    font-weight:600; font-size:28px; letter-spacing:.04em; margin:2px 0 -2px;
   }
   .title{
-    font-family:"Eulyoo1945",serif; font-weight:600;
-    font-size:58px; line-height:1; margin:0 0 2px;
-    letter-spacing:.04em;
-    position:relative; display:inline-block;
-  }
-  .title .underline{
-    display:block; width:160px; height:13px; margin:4px auto 0;
+    font-weight:600; font-size:58px; line-height:1; letter-spacing:.04em; margin:0 0 2px;
   }
 
   .msg{
-    font-family:"Eulyoo1945",serif;
     font-size:18px; line-height:1.85; color:var(--ink-soft);
     margin:16px auto 6px; max-width:320px;
   }
   .msg span{ display:block; }
 
-  .divider{ width:130px; height:24px; margin:16px auto 18px; opacity:.8;}
+  .divider{ width:130px; height:24px; margin:16px auto 18px; opacity:.8; }
 
   .info{
     text-align:left; max-width:300px; margin:0 auto;
@@ -88,55 +69,44 @@
   }
   .row{ display:flex; align-items:baseline; gap:12px; }
   .label{
-    font-family:"Eulyoo1945",serif; font-weight:600; font-size:19px;
-    color:var(--ink); flex:0 0 52px; position:relative;
+    font-weight:600; font-size:19px; color:var(--ink); flex:0 0 52px;
   }
-  .label::after{content:":"; margin-left:3px; opacity:.6;}
-  .val{ font-size:16px; line-height:1.7; color:var(--ink); flex:1;}
-  .val .sub{ display:block; font-size:13.5px; color:var(--ink-soft); margin-top:3px;}
-  .pending{ color:#b0795f; border-bottom:1.5px dashed #c9a486; padding-bottom:1px;}
+  .label::after{ content:":"; margin-left:3px; opacity:.6; }
+  .val{ font-size:16px; line-height:1.7; color:var(--ink); flex:1; }
+  .val .sub{ display:block; font-size:13.5px; color:var(--ink-soft); margin-top:3px; }
 
   .park{
-    font-family:"Eulyoo1945",serif; font-size:15px; color:var(--ink-soft);
+    font-size:15px; color:var(--ink-soft);
     margin:18px auto 0; display:inline-flex; align-items:center; gap:7px;
   }
 
-  .maps{ display:flex; gap:11px; margin:22px auto 4px; max-width:300px;}
+  .maps{ display:flex; gap:11px; margin:22px auto 4px; max-width:300px; }
   .btn{
     flex:1; display:flex; align-items:center; justify-content:center; gap:7px;
     padding:13px 8px; border-radius:16px; text-decoration:none;
-    font-family:"Eulyoo1945",serif; font-weight:600; font-size:16px;
+    font-weight:600; font-size:16px;
     border:2.4px solid var(--line); color:var(--ink); background:var(--card);
     transition:transform .12s ease, background .15s ease;
     filter:url(#paperRough);
   }
-  .btn:active{ transform:translateY(2px) scale(.985); background:#efe6d4;}
-  .btn .pin{ width:16px; height:16px; flex:0 0 auto;}
-  .btn:focus-visible{ outline:3px solid #9a7b53; outline-offset:3px;}
-
-  .foot{
-    font-family:"Eulyoo1945",serif; font-size:17px; letter-spacing:.04em;
-    color:var(--ink-soft); margin-top:24px;
-  }
-  .paw{ display:block; width:30px; height:24px; margin:10px auto 0; opacity:.7;}
+  .btn:active{ transform:translateY(2px) scale(.985); background:#f6efd6; }
+  .btn .pin{ width:16px; height:16px; flex:0 0 auto; }
+  .btn:focus-visible{ outline:3px solid #9a7b53; outline-offset:3px; }
 
   /* entrance */
-  .card>*{ animation:rise .7s cubic-bezier(.2,.7,.2,1) backwards;}
-  .card>*:nth-child(1){animation-delay:.05s} .card>*:nth-child(2){animation-delay:.12s}
-  .card>*:nth-child(3){animation-delay:.19s} .card>*:nth-child(4){animation-delay:.26s}
-  .card>*:nth-child(5){animation-delay:.33s} .card>*:nth-child(6){animation-delay:.40s}
-  .card>*:nth-child(7){animation-delay:.47s} .card>*:nth-child(8){animation-delay:.54s}
-  .card>*:nth-child(9){animation-delay:.61s} .card>*:nth-child(10){animation-delay:.68s}
+  .card>*{ animation:rise .7s cubic-bezier(.2,.7,.2,1) backwards; }
+  .card>*:nth-child(1){animation-delay:.05s} .card>*:nth-child(2){animation-delay:.13s}
+  .card>*:nth-child(3){animation-delay:.21s} .card>*:nth-child(4){animation-delay:.29s}
+  .card>*:nth-child(5){animation-delay:.37s} .card>*:nth-child(6){animation-delay:.45s}
+  .card>*:nth-child(7){animation-delay:.53s} .card>*:nth-child(8){animation-delay:.61s}
   @keyframes rise{from{opacity:0; transform:translateY(12px);}}
 
-  @media (prefers-reduced-motion:reduce){
-    *{animation:none !important;}
-  }
+  @media (prefers-reduced-motion:reduce){ *{animation:none !important;} }
   @media (max-width:360px){ .title{font-size:50px;} .dog{width:80%;} }
 </style>
 </head>
 <body>
-  <!-- hidden defs: hand-drawn roughen filter for borders -->
+  <!-- 손그림 테두리 효과용 필터 (화면엔 안 보임) -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <filter id="paperRough" x="-5%" y="-5%" width="110%" height="110%">
       <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" seed="9" result="t"/>
@@ -147,14 +117,11 @@
   <div class="wrap">
     <div class="frame"></div>
     <main class="card">
-      <p class="eyebrow">여든 번째 생신<span class="dot">✿</span>八旬</p>
 
       <img class="dog" src="KakaoTalk_20260626_153953107.jpg" alt="할머니 팔순 축하 그림">
 
       <p class="name">최정희 할머니</p>
-      <h1 class="title">팔순잔치
-
-      </h1>
+      <h1 class="title">팔순잔치</h1>
 
       <p class="msg"><span>한 해 한 해 곱게 피어</span><span>여든 번째 봄을 맞으셨습니다.</span><span>귀한 걸음으로 함께해 주세요.</span></p>
 
