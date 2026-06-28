@@ -7,20 +7,19 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sunghyunzz/eulyoo1945/eulyoo1945.css">
 <style>
   :root{
-  --paper:#fbf7ee;   /* 배경 (맑은 아이보리, 청첩장 여백) */
-  --paper2:#f1ebd9;  /* 배경 그라데이션 아래쪽 */
+  --paper:#fcfbf7;   /* 배경 (단색) */
+  --paper2:#fcfbf7;  /* 이제 안 쓰지만 같은 색으로 통일 */
   --card:#fffdf8;    /* 카드·버튼 안쪽 면 (거의 흰 크림) */
   --ink:#5c4f37;     /* 메인 글자 (청첩장 글자색 톤의 브라운) */
   --ink-soft:#8c7c5d;/* 흐린 글자 (인사말·설명) */
-  --line:#c2af72;    /* 테두리·선 (은은한 금색) */
+  --line:#f4e2a5;    /* 테두리·선 (은은한 금색) */
   --blush:#e0bfa2;   /* 강아지 볼터치 */
 }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
   b{font-weight:600;}            /* 을유1945는 600(SemiBold)이 볼드예요 */
   body{
-    background:
-      radial-gradient(120% 80% at 50% -10%, #f6f0e4 0%, var(--paper) 55%, var(--paper2) 100%);
+    background:var(--paper);
     color:var(--ink);
     font-family:"Eulyoo1945",serif;
     min-height:100dvh;
